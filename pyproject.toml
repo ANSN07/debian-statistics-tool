@@ -1,0 +1,15 @@
+[project]
+name = "debian-statistics-tool"
+version = "1.0.0"
+description = "A Python CLI tool to generate Debian package statistics."
+dependencies = ["requests"]
+
+[project.scripts]
+package_statistics = "package_statistics.__main__:main"
+
+[tool.setuptools]
+packages = ["package_statistics"]
+
+[build-system]
+requires = ["setuptools", "pip"]
+build-backend = "setuptools.build_meta"
